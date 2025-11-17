@@ -1,0 +1,99 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* ## Colors */
+
+    --green: hsl(75, 94%, 57%);
+
+    --white: hsl(0, 0%, 100%);
+
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+
+    /* ## Typography */
+
+    /* ### Body Copy */
+
+    --font-size:14px; /* (paragraph) */
+
+    /* ### Font */
+
+    --font:"inter", Sans-serif;
+    
+    --weight-regular:400 ;
+    --weight-semibold:600 ;
+    --weight-bold:700 ;
+/*
+[Inter](https://fonts.google.com/specimen/Inter) */
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--grey900);
+    font-family: var(--font);
+    }
+main {
+    width: 22rem;
+    background-color: var(--grey800);
+    border-radius: 1em;
+    text-align: center;
+    padding: 1.7rem;
+}
+main img {
+    border-radius: 50%;
+    width: 6rem;
+    margin-bottom: 1em;
+}
+main h1 {
+    color: var(--white);
+    font-weight: var(--weight-bold);
+    margin-bottom: .5em;
+    font-size: 1.5em;
+}
+main .name {
+    color: var(--green);
+    font-weight: var(--weight-semibold);
+    margin: 0;
+}
+main p {
+    font-size: var(--font-size);
+    color: var(--white);
+    font-weight: var(--weight-regular);
+    margin: 2rem 0;
+}
+main ul {
+    list-style: none;
+}
+main a {
+    text-decoration: none;
+    color: var(--white);
+    cursor: none;
+    font-weight: var(--weight-bold);
+    background-color: var(--grey700);
+    padding: 1rem;
+    display: block;
+    margin-top: 1rem;
+    border-radius: .5em;
+    transition: color .4s, background-color .4s ;
+}
+main a:hover {
+    cursor: pointer;
+    background-color: var(--green);
+    color: var(--grey900);
+}
+@media screen and (min-width:768px){
+    main {
+        padding: 2rem;
+        width: 25rem;
+    }
+}
